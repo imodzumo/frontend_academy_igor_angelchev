@@ -1,0 +1,151 @@
+/*fonts*/
+@font-face {
+  font-family: "ST-Heiti-TC";
+  src: url("../../fonts/ST-Heiti-TC-Medium.ttf");
+}
+@font-face {
+  font-family: "Aller-Bold";
+  src: url("../../fonts/aller.bold.ttf");
+}
+@font-face {
+  font-family: "Aller-Italic";
+  src: url("../../fonts/aller.italic.ttf");
+}
+@font-face {
+  font-family: "Aller-Regular";
+  src: url("../../fonts/aller.regular.ttf");
+}
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../../fonts/MyriadPro-Regular.ttf");
+}
+
+/*scss fonts*/
+$heiti-font: "ST-Heiti-TC", Arial, sans-serif;
+$aller-bold-font: "Aller-Bold", Arial, sans-serif;
+$aller-italic-font: "Aller-Italic", Arial, sans-serif;
+$aller-regular: "Aller-Regular", Arial, sans-serif;
+$myriadPro-font: "MyriadPro-Regular", Arial, sans-serif;
+
+/*scss colors*/
+$main-black-color: #242424;
+$main-beige-color: #efece8;
+$main-grey-color: #4c4c4c;
+$main-green-color: #57c5a0;
+
+
+/*Mixins*/
+
+
+/*reset classes*/
+.a, .ul, .li, .h1, .h2, .h3, .h4, .p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.button {
+  outline: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*css classes*/
+.header-main {
+  background-color: $main-black-color;
+}
+.header-main__black {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-main__black__logo {
+  color: $main-green-color;
+  font-family: $heiti-font;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: -0.65px;
+  padding: 12px 0 13px 0;
+}
+.header-main__black__wrapper {
+  display: flex;
+}
+.header-main__black__wrapper__search {
+  background-color: $main-black-color;
+  position:relative;
+  border-left: 1px solid #393939;
+  &:after{
+    content: "";
+    display: block;
+    background-image: url("../../images/icons/header_search_icon.png");
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 17px;
+    right: 23px;
+  }
+}
+.header-main__black__wrapper__search__input {
+  max-width: 113px;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: #b1aeae;
+  font-family: $myriadPro-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 17px 37px 0 17px;
+  &::placeholder {
+    color: #b1aeae;
+    font-family: $myriadPro-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+}
+.header-main__black__login {
+  max-width: 140px;
+  width: 100%;
+  border-left: 1px solid #393939;
+  border-right: 1px solid #393939;
+  background-color: $main-black-color;
+  color: #7e7e7e;
+  font-family: $aller-regular;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 25px;
+  cursor: pointer;
+  padding: 0 21px;
+}
+.header-main__menu {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
