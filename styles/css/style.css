@@ -204,7 +204,10 @@
   font-size: 16px;
   font-weight: 400; }
   .header-main__menu__a:hover {
-    color: #57c5a0; }
+    color: #57c5a0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .header-main__menu__counters {
   display: -webkit-box;
@@ -229,7 +232,10 @@
     top: 23px;
     left: 23px; }
   .header-main__menu__counters__favorites:hover::before {
-    background-image: url("../../images/icons/star_icon_active.png"); }
+    background-image: url("../../images/icons/star_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .header-main__menu__counters__text {
   min-width: 20px;
@@ -263,7 +269,10 @@
     top: 23px;
     left: 23px; }
   .header-main__menu__counters__cart:hover::before {
-    background-image: url("../../images/icons/cart_icon_active.png"); }
+    background-image: url("../../images/icons/cart_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .header-main__menu__counters__cart .header-main__menu__counters__text {
     background-color: #57c5a0; }
 
@@ -356,7 +365,10 @@
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
   .header-main__home-wrapper__description-bar__a:nth-child(1):hover::before {
-    background-image: url("../../images/icons/eye_icon_active.png"); }
+    background-image: url("../../images/icons/eye_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .header-main__home-wrapper__description-bar__a:nth-child(2)::before {
     content: "";
     display: block;
@@ -371,7 +383,10 @@
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
   .header-main__home-wrapper__description-bar__a:nth-child(2):hover::before {
-    background-image: url("../../images/icons/star_icon_active.png"); }
+    background-image: url("../../images/icons/star_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .header-main__home-wrapper__description-bar__a:nth-child(3)::before {
     content: "";
     display: block;
@@ -386,7 +401,10 @@
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
   .header-main__home-wrapper__description-bar__a:nth-child(3):hover::before {
-    background-image: url("../../images/icons/share_icon_active.png"); }
+    background-image: url("../../images/icons/share_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .header-main__home-wrapper__description-bar__a:nth-child(4)::before {
     content: "";
     display: block;
@@ -401,7 +419,10 @@
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
   .header-main__home-wrapper__description-bar__a:nth-child(4):hover::before {
-    background-image: url("../../images/icons/cart_icon_active.png"); }
+    background-image: url("../../images/icons/cart_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .slider-main__home {
   background-color: #2e2e2e;
@@ -532,7 +553,10 @@
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
   .specials-main__wrapper__text:hover {
-    color: #57c5a0; }
+    color: #57c5a0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .specials-main__wrapper__text__on-sale,
 .specials-main__wrapper__text__must-have {
@@ -555,7 +579,8 @@
   margin: 0 auto;
   padding-top: 29px; }
 
-.products-main__wrapper__arrivals {
+.products-main__wrapper__arrivals,
+.products-main__wrapper__best-sellers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,7 +592,8 @@
   align-items: center;
   margin-bottom: 28px; }
 
-.products-main__wrapper__arrivals__text {
+.products-main__wrapper__arrivals__text,
+.products-main__wrapper__best-sellers__text {
   max-width: 315px;
   width: 100%;
   color: #242424;
@@ -575,7 +601,8 @@
   font-size: 25px;
   font-weight: 300; }
 
-.products-main__wrapper__arrivals__button {
+.products-main__wrapper__arrivals__button,
+.products-main__wrapper__best-sellers__button {
   color: #bcb5a7;
   font-family: "Aller-Regular", Arial, sans-serif;
   font-size: 14px;
@@ -588,9 +615,13 @@
   border: 1px solid #bcb5a7;
   background-color: #ebe7df;
   cursor: pointer; }
-  .products-main__wrapper__arrivals__button:hover {
+  .products-main__wrapper__arrivals__button:hover,
+  .products-main__wrapper__best-sellers__button:hover {
     color: #ffffff;
-    background-color: #2e2e2e; }
+    background-color: #2e2e2e;
+    -webkit-transition: 0.75s;
+    -o-transition: 0.75s;
+    transition: 0.75s; }
 
 .products-main__wrapper__arrivals-shoes {
   display: -webkit-box;
@@ -598,7 +629,227 @@
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 35px; }
 
-.products-main__wrapper__arrivals-shoes__image-first {
+.products-main__wrapper__best-sellers-shoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 46px; }
+
+.products-main__wrapper__arrivals-shoes__box,
+.products-main__wrapper__best-sellers-shoes__box {
   position: relative; }
+
+.products-main__wrapper__arrivals-shoes__price,
+.products-main__wrapper__best-sellers-shoes__price {
+  width: 68px;
+  height: 67px;
+  background-color: #57c5a0;
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  z-index: 2;
+  color: #ffffff;
+  font-family: "Aller-Regular", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.products-main__wrapper__arrivals-shoes__image,
+.products-main__wrapper__best-sellers-shoes__image {
+  display: block;
+  background-color: #ffffff; }
+
+.products-main__wrapper__arrivals-shoes__text,
+.products-main__wrapper__best-sellers-shoes__text {
+  max-width: 300px;
+  width: 100%;
+  max-height: 49px;
+  height: 100%;
+  -webkit-box-shadow: inset 0 1px 0 #cccccc;
+  box-shadow: inset 0 1px 0 #cccccc;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #242424;
+  font-family: "Aller-Regular", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.45px;
+  padding-left: 93px;
+  padding-top: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.products-main__wrapper__arrivals-shoes__sale,
+.products-main__wrapper__best-sellers-shoes__sale {
+  max-width: 68px;
+  width: 100%;
+  max-height: 67px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #242424;
+  color: #ffffff;
+  font-family: "Aller-Regular", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 13px; }
+
+.products-main__wrapper__arrivals-shoes__stock,
+.products-main__wrapper__best-sellers-shoes__stock {
+  max-width: 68px;
+  width: 100%;
+  max-height: 67px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f27e4b;
+  color: #ffffff;
+  font-family: "Aller-Regular", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 13px; }
+
+.products-main__wrapper__arrivals-shoes__toolBar {
+  width: 300px;
+  height: 49px;
+  -webkit-box-shadow: inset 0 1px 0 #cccccc;
+  box-shadow: inset 0 1px 0 #cccccc;
+  background-color: #ffffff;
+  display: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 0; }
+
+.products-main__wrapper__best-sellers-shoes__toolBar {
+  width: 300px;
+  height: 49px;
+  -webkit-box-shadow: inset 0 1px 0 #cccccc;
+  box-shadow: inset 0 1px 0 #cccccc;
+  background-color: #ffffff;
+  display: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 0; }
+
+.products-main__wrapper__arrivals-shoes__box:hover .products-main__wrapper__arrivals-shoes__toolBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.products-main__wrapper__best-sellers-shoes__box:hover .products-main__wrapper__best-sellers-shoes__toolBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.products-main__wrapper__arrivals-shoes__toolBar__eye,
+.products-main__wrapper__best-sellers-shoes__toolBar__eye {
+  background-image: url("../../images/icons/eye_icon.png");
+  width: 42px;
+  height: 49px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center; }
+  .products-main__wrapper__arrivals-shoes__toolBar__eye:hover,
+  .products-main__wrapper__best-sellers-shoes__toolBar__eye:hover {
+    background-image: url("../../images/icons/eye_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+.products-main__wrapper__arrivals-shoes__toolBar__star,
+.products-main__wrapper__best-sellers-shoes__toolBar__star {
+  background-image: url("../../images/icons/star_icon.png");
+  width: 42px;
+  height: 49px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center; }
+  .products-main__wrapper__arrivals-shoes__toolBar__star:hover,
+  .products-main__wrapper__best-sellers-shoes__toolBar__star:hover {
+    background-image: url("../../images/icons/star_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+.products-main__wrapper__arrivals-shoes__toolBar__share,
+.products-main__wrapper__best-sellers-shoes__toolBar__share {
+  background-image: url("../../images/icons/share_icon.png");
+  width: 42px;
+  height: 49px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center; }
+  .products-main__wrapper__arrivals-shoes__toolBar__share:hover,
+  .products-main__wrapper__best-sellers-shoes__toolBar__share:hover {
+    background-image: url("../../images/icons/share_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+.products-main__wrapper__arrivals-shoes__toolBar__cart,
+.products-main__wrapper__best-sellers-shoes__toolBar__cart {
+  background-image: url("../../images/icons/cart_icon.png");
+  width: 42px;
+  height: 49px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center;
+  margin-right: 27px; }
+  .products-main__wrapper__arrivals-shoes__toolBar__cart:hover,
+  .products-main__wrapper__best-sellers-shoes__toolBar__cart:hover {
+    background-image: url("../../images/icons/cart_icon_active.png");
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
