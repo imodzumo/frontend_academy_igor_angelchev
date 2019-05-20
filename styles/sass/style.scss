@@ -35,7 +35,6 @@ $main-green-color: #57c5a0;
 $second-beige-color: #ebe7df;
 $second-grey-color: #2e2e2e;
 
-
 /*Mixins*/
 
 
@@ -52,11 +51,17 @@ $second-grey-color: #2e2e2e;
   padding: 0;
   margin: 0;
 }
+.img {
+  display: block;
+}
 
 /*css classes*/
 .header-main {
   background-color: $main-black-color;
 }
+
+/*Search and registration*/
+
 .header-main__black {
   max-width: 940px;
   width: 100%;
@@ -158,6 +163,9 @@ $second-grey-color: #2e2e2e;
   cursor: pointer;
   padding: 0 21px;
 }
+
+/*Main menu*/
+
 .header-main__menu {
   max-width: 940px;
   width: 100%;
@@ -232,6 +240,10 @@ $second-grey-color: #2e2e2e;
   text-align: center;
   border-radius: 5px;
 }
+.header-main__menu__counters__favorites:hover .header-main__menu__counters__text{
+  background-color: $main-green-color;
+  transition: 0.3s;
+}
 .header-main__menu__counters__cart {
   max-width: 90px;
   width: 100%;
@@ -258,9 +270,16 @@ $second-grey-color: #2e2e2e;
     }
   }
   .header-main__menu__counters__text {
+    background-color: #adadad;
+  }
+  &:hover .header-main__menu__counters__text {
     background-color: $main-green-color;
+    transition: 0.3s;
   }
 }
+
+/*Homepage picture*/
+
 .header-main__home {
   background-color: $main-beige-color;
 }
@@ -388,6 +407,9 @@ $second-grey-color: #2e2e2e;
     transition: 0.3s;
   }
 }
+
+/*Slider main*/
+
 .slider-main__home {
   background-color: $second-grey-color;
   padding-top: 6px;
@@ -481,6 +503,9 @@ $second-grey-color: #2e2e2e;
 .slider-main__home__wrapper__prada__text__active {
   //opacity: 1;
 }
+
+/*Special menu*/
+
 .specials-main {
   background-color: $main-black-color;
 }
@@ -535,16 +560,23 @@ $second-grey-color: #2e2e2e;
   width: 100%;
   min-height: 60px;
 }
+
+/*Products*/
+
 .products-main {
   background-color: $second-beige-color;
-  height: 1000px;
 }
 .products-main__wrapper {
   max-width: 940px;
   width: 100%;
   margin: 0 auto;
   padding-top: 29px;
+  border-bottom: 1px solid #bcb5a7;
 }
+
+/*Products, New arrivals*/
+/*Products, Best sellers*/
+
 .products-main__wrapper__arrivals,
 .products-main__wrapper__best-sellers {
   display: flex;
@@ -766,5 +798,244 @@ $second-grey-color: #2e2e2e;
     transition: 0.3s;
   }
 }
+
+/*News*/
+
+.news-main {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 26px;
+}
+.news-main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 23px;
+}
+.news-main__shipping,
+.news-main__testimonials {
+  max-width: 220px;
+  width: 100%;
+  background-color: #dfdbd4;
+  padding: 32px 0 18px 15px;
+  box-sizing: border-box;
+}
+.news-main__shipping__title,
+.news-main__testimonials__title {
+  max-width: 94px;
+  width: 100%;
+  color: #242424;
+  font-family: $aller-regular;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  box-sizing: content-box;
+}
+.news-main__shipping__text {
+  max-width: 178px;
+  width: 100%;
+  color: #242424;
+  font-family: $aller-regular;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.news-main__testimonials__text {
+  max-width: 176px;
+  width: 100%;
+  color: #242424;
+  font-family: $aller-regular;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.news-main__testimonials__text__p {
+  color: #242424;
+  font-family: $aller-italic-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/*Blog news*/
+
+.news-main__blog {
+  max-width: 460px;
+  width: 100%;
+  background-color: #dfdbd4;
+  box-sizing: border-box;
+  padding: 32px 0 0 18px;
+}
+.news-main__blog__title {
+  max-width: 76px;
+  width: 100%;
+  color: #242424;
+  font-family: $aller-regular;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+.news-main__blog__wrapper {
+  display: flex;
+  margin-bottom: 14px;
+}
+.news-main__blog__wrapper__date {
+  max-width: 36px;
+  width: 100%;
+  min-height: 36px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #57c5a0;
+  color: #ffffff;
+  font-family: $aller-regular;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+}
+.news-main__blog__wrapper__information {
+  padding-top: 4px;
+}
+.news-main__blog__wrapper__information__title {
+  max-width: 354px;
+  width: 100%;
+  color: #242424;
+  font-family: $aller-bold-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.news-main__blog__wrapper__information__text {
+  max-width: 354px;
+  width: 100%;
+  color: #242424;
+  font-family: $aller-regular;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/*Footer*/
+
+.footer-main {
+  background-color: $main-black-color;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+/*Text wrapper*/
+
+.footer-main__wrapper {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51px;
+}
+.footer-main__wrapper__text {
+  max-width: 254px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer-main__wrapper__text__title {
+  color: #7d7d7d;
+  font-family: $aller-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.footer-main__wrapper__text__info {
+  max-width: 254px;
+  width: 100%;
+  color: #a4a4a4;
+  font-family: $aller-italic-font;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: justify;
+}
+
+/*Twitter wrapper*/
+
+.footer-main__wrapper__twitter {
+  max-width: 251px;
+  width: 100%;
+}
+.footer-main__wrapper__twitter__title {
+  max-width: 109px;
+  width: 100%;
+  color: #7d7d7d;
+  font-family: $aller-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+.footer-main__wrapper__twitter__box {}
+
+/*Flickr wrapper*/
+
+.footer-main__wrapper__flickr {
+  max-width: 244px;
+  width: 100%;
+  margin-bottom: 41px;
+}
+.footer-main__wrapper__flickr__title {
+  max-width: 98px;
+  width: 100%;
+  color: #7d7d7d;
+  font-family: $aller-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+.footer-main__wrapper__flickr__box {
+  max-width: 244px;
+  width: 100%;
+  max-height: 121px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-main__wrapper__flickr__img {
+  background-color: #8f765f;
+  margin-bottom: 5px;
+}
+
+
+
+.footer-main__social {
+  height: 168px;
+  background-color: $main-black-color;
+}
+
+
+
+
+
+.footer-main__copyright {
+  background-color: $second-grey-color;
+  height: 90px;
+}
+
+
+
+
+
+
+
+
 
 
