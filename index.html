@@ -11,7 +11,7 @@
     <!--Search and registration-->
     <header class="header-main">
         <div class="header-main__black">
-            <a href="#" class="a"><h1 class="h1 header-main__black__logo">FooseShoes</h1></a>
+            <a href="index.html" class="a"><h1 class="h1 header-main__black__logo">FooseShoes</h1></a>
             <div class="header-main__black__wrapper">
                 <form class="header-main__black__wrapper__search" action="#" method="post">
                     <input type="text" name="search" placeholder="SEARCH" class="header-main__black__wrapper__search__input">
@@ -20,10 +20,21 @@
                         <li class="li header-main__black__wrapper__search__li">Kids</li>
                     </ul>
                 </form>
-                <button class="button header-main__black__login">LOGIN or REGISTER</button>
+                <button class="button header-main__black__login" id="login">LOGIN or REGISTER</button>
             </div>
         </div>
     </header>
+    <!--Registration window-->
+    <div class="header-main__black__login-bar hidden" id="login_bar">
+        <div class="header-main__black__login-bar__curtain" id="curtain"></div>
+        <form class="header-main__black__login-bar__wrapper" action="#" method="post">
+            <h3 class="h3 header-main__black__login-bar__wrapper__title">Login and Registration</h3>
+            <input type="text" name="username" placeholder="Username" class="header-main__black__login-bar__username">
+            <input type="password" name="password" placeholder="Password" class="header-main__black__login-bar__password">
+            <input type="submit" name="log_in" value="Login" class="header-main__black__login-bar__login">
+            <a href="index.html" class="a header-main__black__login-bar__registration">Register</a>
+        </form>
+    </div>
     <!--Main menu-->
     <main class="header-nav">
         <div class="header-main__menu">
@@ -65,26 +76,26 @@
         <!--Slider main-->
         <div class="slider-main__home">
             <div class="slider-main__home__wrapper">
-                <div class="slider-main__home__wrapper__pink-shoes">
+                <div class="slider-main__home__wrapper__pink-shoes" id="block_pink_shoes">
                     <div class="slider-main__home__wrapper__pink-shoes__head">
-                        <div class="slider-main__home__wrapper__pink-shoes__head__active"></div>
+                        <div class="slider-main__home__wrapper__pink-shoes__head__active" id="pink_shoes_slider"></div>
                     </div>
-                    <h2 class="h2 slider-main__home__wrapper__pink-shoes__title slider-main__home__wrapper__pink-shoes__title__active">Pink Shoes</h2>
-                    <h3 class="h3 slider-main__home__wrapper__pink-shoes__text slider-main__home__wrapper__pink-shoes__text__active">Now af $145,99</h3>
+                    <h2 class="h2 slider-main__home__wrapper__pink-shoes__title slider-main__home__wrapper__pink-shoes__title__active" id="pink_shoes_title">Pink Shoes</h2>
+                    <h3 class="h3 slider-main__home__wrapper__pink-shoes__text slider-main__home__wrapper__pink-shoes__text__active" id="pink_shoes_text">Now af $145,99</h3>
                 </div>
-                <div class="slider-main__home__wrapper__anna-field">
+                <div class="slider-main__home__wrapper__anna-field" id="block_anna_field">
                     <div class="slider-main__home__wrapper__anna-field__head">
-                        <div class="slider-main__home__wrapper__anna-field__head__active"></div>
+                        <div class="slider-main__home__wrapper__anna-field__head__active" id="anna_field_slider"></div>
                     </div>
-                    <h2 class="h2 slider-main__home__wrapper__anna-field__title slider-main__home__wrapper__anna-field__title__active">Anna Field</h2>
-                    <h3 class="h3 slider-main__home__wrapper__anna-field__text slider-main__home__wrapper__anna-field__text__active">Limited Edition</h3>
+                    <h2 class="h2 slider-main__home__wrapper__anna-field__title slider-main__home__wrapper__anna-field__title__active" id="anna_field_title">Anna Field</h2>
+                    <h3 class="h3 slider-main__home__wrapper__anna-field__text slider-main__home__wrapper__anna-field__text__active" id="anna_field_text">Limited Edition</h3>
                 </div>
-                <div class="slider-main__home__wrapper__prada">
+                <div class="slider-main__home__wrapper__prada" id="block_prada">
                     <div class="slider-main__home__wrapper__prada__head">
-                        <div class="slider-main__home__wrapper__prada__head__active"></div>
+                        <div class="slider-main__home__wrapper__prada__head__active" id="prada_slider"></div>
                     </div>
-                    <h2 class="h2 slider-main__home__wrapper__prada__title slider-main__home__wrapper__prada__title__active">Prada</h2>
-                    <h3 class="h3 slider-main__home__wrapper__prada__text slider-main__home__wrapper__prada__text__active">Summer is coming</h3>
+                    <h2 class="h2 slider-main__home__wrapper__prada__title slider-main__home__wrapper__prada__title__active" id="prada_title">Prada</h2>
+                    <h3 class="h3 slider-main__home__wrapper__prada__text slider-main__home__wrapper__prada__text__active" id="prada_text">Summer is coming</h3>
                 </div>
             </div>
         </div>
@@ -242,9 +253,8 @@
                 <div class="footer-main__wrapper__twitter">
                     <h3 class="h3 footer-main__wrapper__twitter__title">TWITTER WIDGET</h3>
                     <div class="footer-main__wrapper__twitter__box">
-
+                        <a class="twitter-timeline" data-lang="en" data-width="251" data-height="200" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/treemelody?ref_src=twsrc%5Etfw">Tweets by treemelody</a>
                     </div>
-                    <!--<a class="twitter-timeline" data-lang="en" data-width="251" data-height="200" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/treemelody?ref_src=twsrc%5Etfw">Tweets by treemelody</a>-->
                 </div>
                 <!--Flickr wrapper-->
                 <div class="footer-main__wrapper__flickr">
@@ -260,10 +270,44 @@
                 </div>
             </div>
         </div>
-        <div class="footer-main__social"></div>
-        <div class="footer-main__copyright"></div>
-
+        <!--Social network-->
+        <div class="footer-main__social">
+            <div class="footer-main__social__wrapper">
+                <form class="footer-main__social__wrapper__email" action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter email for newsletter" class="footer-main__social__wrapper__email__input">
+                    <input type="submit" value="❯" class="footer-main__social__wrapper__email__button">
+                </form>
+                <div class="footer-main__social__wrapper__network">
+                    <a href="#" class="a footer-main__social__wrapper__network__facebook"></a>
+                    <a href="#" class="a footer-main__social__wrapper__network__twitter"></a>
+                    <a href="#" class="a footer-main__social__wrapper__network__gplus"></a>
+                    <a href="#" class="a footer-main__social__wrapper__network__linkedin"></a>
+                    <a href="#" class="a footer-main__social__wrapper__network__flickr"></a>
+                </div>
+            </div>
+        </div>
+        <!--Copyright-->
+        <div class="footer-main__copyright">
+            <div class="footer-main__copyright__wrapper">
+                <p class="p footer-main__copyright__text">Copyright © Fooseshoes 2013. Designed by EnzoLiVolti. </p>
+                <ul class="ul footer-main__copyright__ul">
+                    <li class="li footer-main__copyright__li"><a href="#" class="a footer-main__copyright__a">Home</a></li>
+                    <li class="li footer-main__copyright__li"><a href="#" class="a footer-main__copyright__a">Support</a></li>
+                    <li class="li footer-main__copyright__li"><a href="#" class="a footer-main__copyright__a">Terms and Conditions</a></li>
+                    <li class="li footer-main__copyright__li"><a href="#" class="a footer-main__copyright__a">Faqs</a></li>
+                    <li class="li footer-main__copyright__li"><a href="#" class="a footer-main__copyright__a">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
-    <!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+
+
+    <!--Twitter script-->
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    <!--Login and registration script-->
+    <script src="scripts/login.js"></script>
+    <!--Main slider-->
+    <script src="scripts/slider-main.js"></script>
+
 </body>
 </html>
