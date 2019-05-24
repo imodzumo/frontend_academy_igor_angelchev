@@ -566,15 +566,19 @@ $second-grey-color: #2e2e2e;
   min-height: 6px;
   background-color: #57c5a0;
   display: block;
+  opacity: 0;
 }
 .slider-main__home__wrapper__pink-shoes__head__active {
-  display: block;
+  opacity: 1;
+  transition: 0.75s;
 }
 .slider-main__home__wrapper__anna-field__head__active {
-  display: block;
+  opacity: 1;
+  transition: 0.75s;
 }
 .slider-main__home__wrapper__prada__head__active {
-  display: block;
+  opacity: 1;
+  transition: 0.75s;
 }
 .slider-main__home__wrapper__pink-shoes__title,
 .slider-main__home__wrapper__anna-field__title,
@@ -1140,6 +1144,27 @@ $second-grey-color: #2e2e2e;
 .footer-main__wrapper__flickr__img {
   background-color: #8f765f;
   margin-bottom: 5px;
+  cursor: pointer;
+}
+.flickr__image__bar {}
+.flickr__image__bar__curtain {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $main-grey-color;
+  opacity: 0.5;
+  z-index: 3;
+}
+.footer-main__wrapper__flickr__img__big {
+  width: 760px;
+  height: 560px;
+  z-index: 4;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 /*Social network*/

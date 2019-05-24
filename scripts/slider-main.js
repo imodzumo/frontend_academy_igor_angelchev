@@ -15,61 +15,49 @@ var prada_text = document.getElementById('prada_text');
 
 
 block_pink_shoes.addEventListener('click',function () {
-    pink_shoes_slider.classList.remove('slider-main__home__wrapper__pink-shoes__head__active');
-    pink_shoes_title.classList.remove('slider-main__home__wrapper__pink-shoes__title__active');
-    pink_shoes_text.classList.remove('slider-main__home__wrapper__pink-shoes__text__active');
+    pink_shoes_slider.classList.add('slider-main__home__wrapper__pink-shoes__head__active');
+    pink_shoes_title.classList.add('slider-main__home__wrapper__pink-shoes__title__active');
+    pink_shoes_text.classList.add('slider-main__home__wrapper__pink-shoes__text__active');
 
-    block_anna_field.addEventListener('click', function () {
-        anna_field_slider.classList.add('slider-main__home__wrapper__anna-field__head__active');
-        anna_field_title.classList.add('slider-main__home__wrapper__anna-field__title__active');
-        anna_field_text.classList.add('slider-main__home__wrapper__anna-field__text__active');
-    },false);
+    anna_field_slider.classList.remove('slider-main__home__wrapper__anna-field__head__active');
+    anna_field_title.classList.remove('slider-main__home__wrapper__anna-field__title__active');
+    anna_field_text.classList.remove('slider-main__home__wrapper__anna-field__text__active');
 
-    block_prada.addEventListener('click', function () {
-        prada_slider.classList.add('slider-main__home__wrapper__prada__head__active');
-        prada_title.classList.add('slider-main__home__wrapper__prada__title__active');
-        prada_text.classList.add('slider-main__home__wrapper__prada__text__active');
-    },false);
+    prada_slider.classList.remove('slider-main__home__wrapper__prada__head__active');
+    prada_title.classList.remove('slider-main__home__wrapper__prada__title__active');
+    prada_text.classList.remove('slider-main__home__wrapper__prada__text__active');
 
 },false);
 
 
 
 block_anna_field.addEventListener('click',function () {
-    anna_field_slider.classList.remove('slider-main__home__wrapper__anna-field__head__active');
-    anna_field_title.classList.remove('slider-main__home__wrapper__anna-field__title__active');
-    anna_field_text.classList.remove('slider-main__home__wrapper__anna-field__text__active');
+    anna_field_slider.classList.add('slider-main__home__wrapper__anna-field__head__active');
+    anna_field_title.classList.add('slider-main__home__wrapper__anna-field__title__active');
+    anna_field_text.classList.add('slider-main__home__wrapper__anna-field__text__active');
 
-    block_pink_shoes.addEventListener('click', function () {
-        pink_shoes_slider.classList.add('slider-main__home__wrapper__pink-shoes__head__active');
-        pink_shoes_title.classList.add('slider-main__home__wrapper__pink-shoes__title__active');
-        pink_shoes_text.classList.add('slider-main__home__wrapper__pink-shoes__text__active');
-    },false);
-
-    block_prada.addEventListener('click', function () {
-        prada_slider.classList.add('slider-main__home__wrapper__prada__head__active');
-        prada_title.classList.add('slider-main__home__wrapper__prada__title__active');
-        prada_text.classList.add('slider-main__home__wrapper__prada__text__active');
-    },false);
+    pink_shoes_slider.classList.remove('slider-main__home__wrapper__pink-shoes__head__active');
+    pink_shoes_title.classList.remove('slider-main__home__wrapper__pink-shoes__title__active');
+    pink_shoes_text.classList.remove('slider-main__home__wrapper__pink-shoes__text__active');
+    
+    prada_slider.classList.remove('slider-main__home__wrapper__prada__head__active');
+    prada_title.classList.remove('slider-main__home__wrapper__prada__title__active');
+    prada_text.classList.remove('slider-main__home__wrapper__prada__text__active');
 
 },false);
 
 
 block_prada.addEventListener('click',function () {
-    prada_slider.classList.remove('slider-main__home__wrapper__prada__head__active');
-    prada_title.classList.remove('slider-main__home__wrapper__prada__title__active');
-    prada_text.classList.remove('slider-main__home__wrapper__prada__text__active');
+    prada_slider.classList.add('slider-main__home__wrapper__prada__head__active');
+    prada_title.classList.add('slider-main__home__wrapper__prada__title__active');
+    prada_text.classList.add('slider-main__home__wrapper__prada__text__active');
 
-    block_pink_shoes.addEventListener('click', function () {
-        pink_shoes_slider.classList.add('slider-main__home__wrapper__pink-shoes__head__active');
-        pink_shoes_title.classList.add('slider-main__home__wrapper__pink-shoes__title__active');
-        pink_shoes_text.classList.add('slider-main__home__wrapper__pink-shoes__text__active');
-    },false);
+    pink_shoes_slider.classList.remove('slider-main__home__wrapper__pink-shoes__head__active');
+    pink_shoes_title.classList.remove('slider-main__home__wrapper__pink-shoes__title__active');
+    pink_shoes_text.classList.remove('slider-main__home__wrapper__pink-shoes__text__active');
 
-    block_anna_field.addEventListener('click', function () {
-        anna_field_slider.classList.add('slider-main__home__wrapper__anna-field__head__active');
-        anna_field_title.classList.add('slider-main__home__wrapper__anna-field__title__active');
-        anna_field_text.classList.add('slider-main__home__wrapper__anna-field__text__active');
-    },false);
+    anna_field_slider.classList.remove('slider-main__home__wrapper__anna-field__head__active');
+    anna_field_title.classList.remove('slider-main__home__wrapper__anna-field__title__active');
+    anna_field_text.classList.remove('slider-main__home__wrapper__anna-field__text__active');
 
 },false);
