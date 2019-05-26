@@ -175,6 +175,16 @@
   cursor: pointer;
   padding: 0 21px; }
 
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .header-main__black {
+    max-width: 720px; }
+  .header-main__black__wrapper__search {
+    visibility: hidden; }
+    .header-main__black__wrapper__search::before {
+      visibility: visible; } }
+
+/*Mobile*/
 /*Registration window*/
 .hidden {
   display: none; }
@@ -465,6 +475,15 @@
     -o-transition: 0.3s;
     transition: 0.3s; }
 
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .header-main__menu {
+    max-width: 720px; }
+  .header-main__menu__counters__favorites {
+    border-left: none; }
+  .header-main__menu__counters__cart {
+    padding: 21px 8px 19px 46px; } }
+
 /*Homepage picture*/
 .header-main__home {
   background-color: #efece7; }
@@ -613,6 +632,19 @@
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .header-main__home-wrapper {
+    display: -webkit-box; }
+  .header-main__home-wrapper__image {
+    -webkit-transform: translateX(-130px);
+    -ms-transform: translateX(-130px);
+    transform: translateX(-130px); }
+  .header-main__home-wrapper__description {
+    -webkit-transform: translateX(-415px);
+    -ms-transform: translateX(-415px);
+    transform: translateX(-415px); } }
 
 /*Slider main*/
 .slider-main__home {
@@ -807,6 +839,28 @@
   width: 100%;
   min-height: 60px; }
 
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .specials-main__wrapper {
+    max-width: 700px; }
+  .specials-main__wrapper__text__special-offer {
+    max-width: 197px; }
+  .specials-main__wrapper__img-on-sale {
+    background-image: url("../../images/on_sale_image_tablet.jpg");
+    width: 220px;
+    height: 180px;
+    background-repeat: no-repeat; }
+  .specials-main__wrapper__img-special-offer {
+    background-image: url("../../images/special_offer_image_tablet.jpg");
+    width: 220px;
+    height: 180px;
+    background-repeat: no-repeat; }
+  .specials-main__wrapper__img-must-have {
+    background-image: url("../../images/must_have_image_tablet.jpg");
+    width: 220px;
+    height: 180px;
+    background-repeat: no-repeat; } }
+
 /*Products*/
 .products-main {
   background-color: #ebe7df; }
@@ -934,6 +988,29 @@
   line-height: 25px;
   letter-spacing: 0.45px;
   padding-left: 93px;
+  padding-top: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.products-main__wrapper__arrivals-shoes__text__tablet,
+.products-main__wrapper__best-sellers-shoes__text__tablet {
+  max-width: 300px;
+  width: 100%;
+  max-height: 49px;
+  height: 100%;
+  -webkit-box-shadow: inset 0 1px 0 #cccccc;
+  box-shadow: inset 0 1px 0 #cccccc;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #242424;
+  font-family: "Aller-Regular", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.45px;
+  padding-left: 85px;
   padding-top: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -1103,6 +1180,34 @@
     -o-transition: 0.3s;
     transition: 0.3s; }
 
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .products-main__wrapper {
+    max-width: 711px;
+    border: 0; }
+  .products-main__wrapper__arrivals-shoes,
+  .products-main__wrapper__best-sellers-shoes {
+    max-width: 700px; }
+  .products-main__wrapper__arrivals-shoes__image,
+  .products-main__wrapper__best-sellers-shoes__image {
+    width: 220px;
+    height: 270px; }
+  .products-main__wrapper__arrivals-shoes__toolBar,
+  .products-main__wrapper__best-sellers-shoes__toolBar {
+    max-width: 220px; }
+  .products-main__wrapper__arrivals-shoes__toolBar__cart,
+  .products-main__wrapper__best-sellers-shoes__toolBar__cart {
+    margin-right: 0; }
+  .products-main__wrapper__arrivals-shoes__toolBar__eye,
+  .products-main__wrapper__arrivals-shoes__toolBar__star,
+  .products-main__wrapper__arrivals-shoes__toolBar__share,
+  .products-main__wrapper__arrivals-shoes__toolBar__cart,
+  .products-main__wrapper__best-sellers-shoes__toolBar__eye,
+  .products-main__wrapper__best-sellers-shoes__toolBar__star,
+  .products-main__wrapper__best-sellers-shoes__toolBar__share,
+  .products-main__wrapper__best-sellers-shoes__toolBar__cart {
+    width: 35px; } }
+
 /*News*/
 .news-main {
   max-width: 940px;
@@ -1166,6 +1271,13 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px; }
+
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .news-main {
+    max-width: 700px; }
+  .news-main__shipping {
+    display: none; } }
 
 /*Blog news*/
 .news-main__blog {
@@ -1353,6 +1465,13 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
+
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .footer-main__wrapper {
+    max-width: 700px; }
+  .footer-main__wrapper__twitter {
+    display: none; } }
 
 /*Social network*/
 .footer-main__social {
@@ -1559,6 +1678,11 @@
     -o-transition: 0.3s;
     transition: 0.3s; }
 
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .footer-main__social__wrapper {
+    max-width: 700px; } }
+
 /*Copyright*/
 .footer-main__copyright {
   background-color: #2e2e2e; }
@@ -1629,3 +1753,8 @@
     -o-transition: 0.3s;
     transition: 0.3s;
     opacity: 1; }
+
+/*Tablet*/
+@media screen and (max-width: 960px) {
+  .footer-main__copyright__wrapper {
+    max-width: 700px; } }
