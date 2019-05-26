@@ -185,6 +185,14 @@
       visibility: visible; } }
 
 /*Mobile*/
+@media screen and (max-width: 720px) {
+  .header-main__black {
+    max-width: 320px; }
+  .header-main__black__wrapper__search {
+    display: none; }
+  .header-main__black__login {
+    padding: 0 12px; } }
+
 /*Registration window*/
 .hidden {
   display: none; }
@@ -397,6 +405,9 @@
     -o-transition: 0.3s;
     transition: 0.3s; }
 
+.header-main__menu__ul__mobile {
+  display: none; }
+
 .header-main__menu__counters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,6 +494,82 @@
     border-left: none; }
   .header-main__menu__counters__cart {
     padding: 21px 8px 19px 46px; } }
+
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .header-main__menu {
+    position: relative;
+    max-width: 320px; }
+  .header-main__menu__ul {
+    display: none; }
+  .header-main__menu__ul__mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 154px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none; }
+  .header-main__menu__li__mobile {
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #cccccc;
+    background-color: #ebe7df; }
+  .header-main__menu__a__mobile {
+    color: #242424;
+    font-family: "Aller-Regular", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400; }
+    .header-main__menu__a__mobile:hover {
+      color: #57c5a0;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+  .header-main__menu__ul__mobile__box {
+    width: 77px;
+    height: 60px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    position: relative; }
+    .header-main__menu__ul__mobile__box::before {
+      content: '';
+      display: block;
+      background-image: url("../../images/icons/menu_icon.png");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%); }
+    .header-main__menu__ul__mobile__box:hover .header-main__menu__ul__mobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .header-main__menu__search__mobile {
+    width: 70px;
+    height: 60px;
+    border-right: 1px solid #cccccc;
+    position: relative; }
+    .header-main__menu__search__mobile::before {
+      content: '';
+      display: block;
+      background-image: url("../../images/icons/menu_search_icon_mobile.png");
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%); }
+    .header-main__menu__search__mobile:hover::before {
+      background-image: url("../../images/icons/menu_search_icon_mobile_active.png"); } }
 
 /*Homepage picture*/
 .header-main__home {
@@ -646,6 +733,44 @@
     -ms-transform: translateX(-415px);
     transform: translateX(-415px); } }
 
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .header-main__home-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .header-main__home-wrapper__image {
+    width: 443px;
+    height: 293px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%); }
+  .header-main__home-wrapper__description {
+    max-width: 320px;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    padding-top: 19px;
+    padding-left: 10px; }
+  .header-main__home-wrapper__description__text {
+    width: 315px;
+    height: 56px;
+    color: #242424;
+    font-family: "Aller-Regular", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 29px; }
+  .header-main__home-wrapper__description-bar {
+    margin-bottom: 15px; } }
+
 /*Slider main*/
 .slider-main__home {
   background-color: #2e2e2e;
@@ -777,6 +902,23 @@
   -o-transition: 0.75s;
   transition: 0.75s; }
 
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .slider-main__home {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .slider-main__home__wrapper {
+    max-width: 320px; }
+  .slider-main__home__wrapper__pink-shoes__head,
+  .slider-main__home__wrapper__anna-field__head,
+  .slider-main__home__wrapper__prada__head {
+    min-width: 50px;
+    padding: 2px 5px 2px 5px; }
+  .slider-main__home__wrapper__pink-shoes__head__active,
+  .slider-main__home__wrapper__anna-field__head__active,
+  .slider-main__home__wrapper__prada__head__active {
+    min-width: 30px; } }
+
 /*Special menu*/
 .specials-main {
   background-color: #242424; }
@@ -860,6 +1002,18 @@
     width: 220px;
     height: 180px;
     background-repeat: no-repeat; } }
+
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .specials-main__wrapper {
+    max-width: 320px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .specials-main__wrapper__a:nth-child(2) {
+    display: none; }
+  .specials-main__wrapper__a:nth-child(3) {
+    display: none; } }
 
 /*Products*/
 .products-main {
@@ -1208,6 +1362,33 @@
   .products-main__wrapper__best-sellers-shoes__toolBar__cart {
     width: 35px; } }
 
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .products-main__wrapper {
+    max-width: 320px;
+    padding-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .products-main__wrapper__arrivals-shoes__box:nth-child(1) {
+    display: none; }
+  .products-main__wrapper__arrivals-shoes__box:nth-child(3) {
+    display: none; }
+  .products-main__wrapper__arrivals__button,
+  .products-main__wrapper__best-sellers__button {
+    margin-right: 10px; }
+  .products-main__wrapper__best-sellers-shoes__box:nth-child(1) {
+    display: none; }
+  .products-main__wrapper__best-sellers-shoes__box:nth-child(2) {
+    display: none; } }
+
 /*News*/
 .news-main {
   max-width: 940px;
@@ -1279,6 +1460,14 @@
   .news-main__shipping {
     display: none; } }
 
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .news-main {
+    max-width: 320px;
+    padding: 0 10px; }
+  .news-main__testimonials {
+    display: none; } }
+
 /*Blog news*/
 .news-main__blog {
   max-width: 460px;
@@ -1347,6 +1536,11 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px; }
+
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .news-main__blog {
+    max-width: 300px; } }
 
 /*Footer*/
 .footer-main {
@@ -1472,6 +1666,18 @@
     max-width: 700px; }
   .footer-main__wrapper__twitter {
     display: none; } }
+
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .footer-main__wrapper {
+    max-width: 320px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .footer-main__wrapper__text {
+    display: none; }
+  .footer-main__wrapper__flickr {
+    margin-bottom: 15px; } }
 
 /*Social network*/
 .footer-main__social {
@@ -1683,6 +1889,22 @@
   .footer-main__social__wrapper {
     max-width: 700px; } }
 
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .footer-main__social__wrapper__email {
+    margin-bottom: 15px; }
+  .footer-main__social__wrapper {
+    max-width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer-main__social__wrapper__network {
+    max-width: 250px; } }
+
 /*Copyright*/
 .footer-main__copyright {
   background-color: #2e2e2e; }
@@ -1758,3 +1980,14 @@
 @media screen and (max-width: 960px) {
   .footer-main__copyright__wrapper {
     max-width: 700px; } }
+
+/*Mobile*/
+@media screen and (max-width: 720px) {
+  .footer-main__copyright__wrapper {
+    max-width: 320px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center; }
+  .footer-main__copyright__ul {
+    display: none; } }
