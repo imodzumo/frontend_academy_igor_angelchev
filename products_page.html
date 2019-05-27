@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>FooseShoes</title>
+    <title>FooseShoes Products</title>
     <link rel="stylesheet" href="styles/css/carousel_style.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/products_style.css">
 </head>
 <body>
     <!--Search and registration-->
@@ -42,7 +42,7 @@
         <div class="header-main__menu">
             <ul class="ul header-main__menu__ul">
                 <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a">Home</a></li>
-                <li class="li header-main__menu__li"><a href="products_page.html" class="a header-main__menu__a">Products</a></li>
+                <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a active">Products</a></li>
                 <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a">About</a></li>
                 <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a">Pages</a></li>
                 <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a">Blog</a></li>
@@ -51,7 +51,7 @@
             <div class="header-main__menu__ul__mobile__box">
                 <ul class="ul header-main__menu__ul__mobile">
                     <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">Home</a></li>
-                    <li class="li header-main__menu__li__mobile"><a href="products_page.html" class="a header-main__menu__a__mobile">Products</a></li>
+                    <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">Products</a></li>
                     <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">About</a></li>
                     <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">Pages</a></li>
                     <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">Blog</a></li>
@@ -71,62 +71,62 @@
         <!--Homepage picture-->
         <div class="header-main__home">
             <div class="header-main__home-wrapper">
-                <img src="images/pink_shoes.png" alt="pink-shoes" class=" img header-main__home-wrapper__image" width="778" height="460">
+                <img src="images/products_main_img.jpg" alt="pink-shoes" class=" img header-main__home-wrapper__image" width="550" height="260">
                 <div class="header-main__home-wrapper__description">
-                    <a href="#" class="a header-main__home-wrapper__description__price">$145,99</a>
-                    <h2 class="h2 header-main__home-wrapper__description__title">Pink Shoes 2013 Collection</h2>
-                    <h3 class="h3 header-main__home-wrapper__description__text">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat
-                        sit amet eu orci. Donec dignissim dolor eget..</h3>
-                    <div class="header-main__home-wrapper__description-bar">
-                        <a href="#" class="a header-main__home-wrapper__description-bar__a"></a>
-                        <a href="#" class="a header-main__home-wrapper__description-bar__a"></a>
-                        <a href="#" class="a header-main__home-wrapper__description-bar__a"></a>
-                        <a href="#" class="a header-main__home-wrapper__description-bar__a"></a>
+                    <div class="header-main__home-wrapper__description__first">
+                        <a href="#" class="a header-main__home-wrapper__description__price">$145,99</a>
+                        <h2 class="h2 header-main__home-wrapper__description__title">Pink Shoes 2013 Collection</h2>
+                    </div>
+                    <div class="header-main__home-wrapper__description__second">
+                        <h3 class="h3 header-main__home-wrapper__description__text">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat
+                            sit amet eu orci. Donec dignissim dolor eget..</h3>
+                        <div class="header-main__home-wrapper__description-bar">
+                            <a href="#" class="a header-main__home-wrapper__description-bar__a"></a>
+                            <a href="#" class="a header-main__home-wrapper__description-bar__a"></a>
+                            <a href="#" class="a header-main__home-wrapper__description-bar__a"></a>
+                            <a href="#" class="a header-main__home-wrapper__description-bar__a"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Slider main-->
-        <div class="slider-main__home">
-            <div class="slider-main__home__wrapper">
-                <div class="slider-main__home__wrapper__pink-shoes" id="block_pink_shoes">
-                    <div class="slider-main__home__wrapper__pink-shoes__head">
-                        <div class="slider-main__home__wrapper__pink-shoes__head__active" id="pink_shoes_slider"></div>
+        <!--Shop filter-->
+        <div class="shop-filter__main">
+            <div class="shop-filter__main__wrapper">
+                <h3 class="h3 shop-filter__main__title">Shop by</h3>
+                <div class="shop-filter__main__wrapper__box">
+                    <!--Filter 1-->
+                    <div class="shop-filter__main__wrapper__box__relative">
+                        <div class="shop-filter__main__wrapper__box__bar shop-filter__main__wrapper__box__brands" id="brands">Brands</div>
+                        <div class="shop-filter__main__wrapper__box__bar__subMenu__curtain hidden" id="brands_menu_curtain"></div>
+                        <ul class="ul shop-filter__main__wrapper__box__bar__subMenu__brands hidden" id="brands_menu">
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Prada</li>
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Gucci</li>
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Nike</li>
+                        </ul>
                     </div>
-                    <h2 class="h2 slider-main__home__wrapper__pink-shoes__title slider-main__home__wrapper__pink-shoes__title__active" id="pink_shoes_title">Pink Shoes</h2>
-                    <h3 class="h3 slider-main__home__wrapper__pink-shoes__text slider-main__home__wrapper__pink-shoes__text__active" id="pink_shoes_text">Now af $145,99</h3>
-                </div>
-                <div class="slider-main__home__wrapper__anna-field" id="block_anna_field">
-                    <div class="slider-main__home__wrapper__anna-field__head">
-                        <div class="" id="anna_field_slider"></div>
+                    <!--Filter 2-->
+                    <div class="shop-filter__main__wrapper__box__relative">
+                        <div class="shop-filter__main__wrapper__box__bar shop-filter__main__wrapper__box__categories" id="categories">Categories</div>
+                        <div class="shop-filter__main__wrapper__box__bar__subMenu__curtain hidden" id="categories_menu_curtain"></div>
+                        <ul class="ul shop-filter__main__wrapper__box__bar__subMenu__categories hidden" id="categories_menu">
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Shoes</li>
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Trainers</li>
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Boots</li>
+                        </ul>
                     </div>
-                    <h2 class="h2 slider-main__home__wrapper__anna-field__title " id="anna_field_title">Anna Field</h2>
-                    <h3 class="h3 slider-main__home__wrapper__anna-field__text " id="anna_field_text">Limited Edition</h3>
-                </div>
-                <div class="slider-main__home__wrapper__prada" id="block_prada">
-                    <div class="slider-main__home__wrapper__prada__head">
-                        <div class="" id="prada_slider"></div>
+                    <!--Filter 3-->
+                    <div class="shop-filter__main__wrapper__box__relative">
+                        <div class="shop-filter__main__wrapper__box__bar shop-filter__main__wrapper__box__price" id="price">Price</div>
+                        <div class="shop-filter__main__wrapper__box__bar__subMenu__curtain hidden" id="price_menu_curtain"></div>
+                        <ul class="ul shop-filter__main__wrapper__box__bar__subMenu__price hidden" id="price_menu">
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Lowest price</li>
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Highest price</li>
+                            <li class="li shop-filter__main__wrapper__box__bar__subMenu__li">Best price</li>
+                        </ul>
                     </div>
-                    <h2 class="h2 slider-main__home__wrapper__prada__title " id="prada_title">Prada</h2>
-                    <h3 class="h3 slider-main__home__wrapper__prada__text " id="prada_text">Summer is coming</h3>
+
                 </div>
-            </div>
-        </div>
-        <!--Special menu-->
-        <div class="specials-main">
-            <div class="specials-main__wrapper">
-                <a href="#" class="a specials-main__wrapper__a">
-                    <img src="images/on_sale_image.jpg" alt="on_sale" class="img specials-main__wrapper__img-on-sale" width="300" height="180">
-                    <h3 class="h3 specials-main__wrapper__text specials-main__wrapper__text__on-sale">On sale</h3>
-                </a>
-                <a href="#" class="a specials-main__wrapper__a">
-                    <img src="images/special_offer_image.jpg" alt="special_offer" class="img specials-main__wrapper__img-special-offer" width="300" height="180">
-                    <h3 class="h3 specials-main__wrapper__text specials-main__wrapper__text__special-offer">Special offers</h3>
-                </a>
-                <a href="#" class="a specials-main__wrapper__a">
-                    <img src="images/must_have_image.jpg" alt="must_have" class="img specials-main__wrapper__img-must-have" width="300" height="180">
-                    <h3 class="h3 specials-main__wrapper__text specials-main__wrapper__text__must-have">Must have</h3>
-                </a>
             </div>
         </div>
         <!--Products-->
@@ -407,8 +407,6 @@
     <script src="https://platform.twitter.com/widgets.js"></script>
     <!--Login and registration script-->
     <script src="scripts/login.js"></script>
-    <!--Main slider-->
-    <script src="scripts/slider-main.js"></script>
     <!--News swiper-->
     <script src="scripts/news_carousel.js"></script>
     <!-- Initialize Swiper -->
@@ -434,6 +432,8 @@
     <script src="scripts/flickr_image.js"></script>
     <!--Email value-->
     <script src="scripts/email.js"></script>
+    <!--Shop filter-->
+    <script src="scripts/shop_filter.js"></script>
 
 </body>
 </html>
