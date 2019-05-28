@@ -541,16 +541,23 @@ $second-grey-color: #2e2e2e;
 }
 .header-main__home-wrapper {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 940px;
   width: 100%;
   display: flex;
+  position: relative;
 }
-.header-main__home-wrapper__image {}
+.header-main__home-wrapper__image {
+
+  transform: translateX(-215px);
+}
 .header-main__home-wrapper__description {
   max-width: 384px;
   width: 100%;
   padding-top: 70px;
-  transform: translateX(-28px);
+  transform: translateX(-36px);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .header-main__home-wrapper__description__price {
   max-width: 68px;
@@ -673,7 +680,7 @@ $second-grey-color: #2e2e2e;
     transform: translateX(-130px);
   }
   .header-main__home-wrapper__description {
-    transform: translateX(-415px);
+    transform: translateX(-18px);
   }
 }
 /*Mobile*/
@@ -686,10 +693,8 @@ $second-grey-color: #2e2e2e;
   .header-main__home-wrapper__image {
     width: 443px;
     height: 293px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-55%);
+    margin-bottom: 50px;
+    transform: translateX(-12px);
   }
   .header-main__home-wrapper__description {
     max-width: 320px;
