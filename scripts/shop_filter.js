@@ -23,7 +23,7 @@ brands.addEventListener('click',function () {
     /*Choose filter*/
     li_brands.forEach(function(e) {
             e.addEventListener('click', function () {
-                console.log(brands.textContent = e.textContent);
+                brands.textContent = e.textContent
             }, false);
         }
     );
@@ -36,7 +36,7 @@ categories.addEventListener('click',function () {
     /*Choose filter*/
     li_categories.forEach(function(e) {
             e.addEventListener('click', function () {
-                console.log(categories.textContent = e.textContent);
+                categories.textContent = e.textContent
             }, false);
         }
     );
@@ -49,7 +49,7 @@ price.addEventListener('click',function () {
     /*Choose filter*/
     li_price.forEach(function(e) {
             e.addEventListener('click', function () {
-                console.log(price.textContent = e.textContent);
+                price.textContent = e.textContent
             }, false);
         }
     );

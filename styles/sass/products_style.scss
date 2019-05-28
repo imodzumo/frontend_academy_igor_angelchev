@@ -858,58 +858,177 @@ $second-grey-color: #2e2e2e;
   border-bottom: 1px solid #bcb5a7;
 }
 
-/*Products, New arrivals*/
-/*Products, Best sellers*/
+/*Products, all products*/
 
-.products-main__wrapper__arrivals,
-.products-main__wrapper__best-sellers {
+.products-main__wrapper__all-products {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 28px;
 }
-.products-main__wrapper__arrivals__text,
-.products-main__wrapper__best-sellers__text {
-  max-width: 315px;
-  width: 100%;
+.products-main__wrapper__all-products__links {
+  display: flex;
+  align-items: center;
+}
+.products-main__wrapper__all-products__title {
   color: #242424;
   font-family: $aller-regular;
   font-size: 25px;
   font-weight: 300;
+  margin-right: 19px;
 }
-.products-main__wrapper__arrivals__button,
-.products-main__wrapper__best-sellers__button {
+.products-main__wrapper__all-products__a {
+  color: #bcb5a7;
+  font-family: $aller-regular;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  margin-right: 19px;
+  position: relative;
+  &::after {
+      content: '>';
+      position: absolute;
+      top: 1px;
+      right: -12px;
+  }
+  &:nth-child(3)::after {
+    content: '';
+  }
+  &:hover {
+    color: $main-green-color;
+    transition: 0.3s;
+  }
+}
+.products-main__wrapper__all-products__buttons {
+ display: flex;
+}
+.products-main__wrapper__all-products__buttons__title {
+  max-width: 53px;
+  width: 100%;
   color: #bcb5a7;
   font-family: $aller-regular;
   font-size: 14px;
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 0.35px;
-  max-width: 100px;
-  width: 100%;
+  margin-right: 13px;
+}
+.products-main__wrapper__all-products__buttons__blocks {
+  min-width: 30px;
   max-height: 30px;
   border: 1px solid #bcb5a7;
   background-color: #ebe7df;
+  margin-right: 9px;
+  position: relative;
   cursor: pointer;
+  &:before {
+    content: '';
+    display: block;
+    background-image: url("../../images/icons/products_blocks_icon.png");
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &:hover {
+    border: 1px solid $main-green-color;
+    transition: 0.75s;
+  }
+  &:hover::before {
+    background-image: url("../../images/icons/products_blocks_icon_active.png");
+    transition: 0.75s;
+  }
+}
+.products-main__wrapper__all-products__buttons__column {
+  min-width: 30px;
+  max-height: 30px;
+  border: 1px solid #bcb5a7;
+  background-color: #ebe7df;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: '';
+    display: block;
+    background-image: url("../../images/icons/products_column_icon.png");
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &:hover {
+    border: 1px solid $main-green-color;
+    transition: 0.75s;
+  }
+  &:hover::before {
+    background-image: url("../../images/icons/products_column_icon_active.png");
+    transition: 0.75s;
+  }
+}
+.products-main__wrapper__all-products__buttons__sort {
+  color: #bcb5a7;
+  font-family: $aller-regular;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.35px;
+  min-width: 200px;
+  min-height: 30px;
+  height: 100%;
+  border: 1px solid #bcb5a7;
+  background-color: #ebe7df;
+  cursor: pointer;
+  position: relative;
   &:hover {
     color: #ffffff;
     background-color: #2e2e2e;
     transition: 0.75s;
   }
+  &:before {
+    content: '';
+    display: block;
+    background-image: url("../../images/icons/products_arrow_down_icon.png");
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 6px;
+    right: 11px;
+  }
+  &:hover::before {
+    background-image: url("../../images/icons/products_arrow_down_icon_active.png");
+    transition: 0.75s;
+  }
 }
-.products-main__wrapper__arrivals-shoes {
+
+/*Products block*/
+
+.products-main__wrapper__all-shoes {
+  max-width: 940px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  flex-wrap: wrap;
+  margin-bottom: 47px;
 }
-.products-main__wrapper__best-sellers-shoes {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 46px;
+.width-940 {
+  max-width: 940px;
 }
+.width-300 {
+  max-width: 300px;
+}
+
 .products-main__wrapper__arrivals-shoes__box,
 .products-main__wrapper__best-sellers-shoes__box {
   position: relative;
+  margin-bottom: 15px;
 }
 .products-main__wrapper__arrivals-shoes__price,
 .products-main__wrapper__best-sellers-shoes__price {

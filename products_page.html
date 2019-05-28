@@ -41,8 +41,8 @@
     <main class="header-nav">
         <div class="header-main__menu">
             <ul class="ul header-main__menu__ul">
-                <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a">Home</a></li>
-                <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a active">Products</a></li>
+                <li class="li header-main__menu__li"><a href="index.html" class="a header-main__menu__a">Home</a></li>
+                <li class="li header-main__menu__li"><a href="products_page.html" class="a header-main__menu__a active">Products</a></li>
                 <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a">About</a></li>
                 <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a">Pages</a></li>
                 <li class="li header-main__menu__li"><a href="#" class="a header-main__menu__a">Blog</a></li>
@@ -50,8 +50,8 @@
             </ul>
             <div class="header-main__menu__ul__mobile__box">
                 <ul class="ul header-main__menu__ul__mobile">
-                    <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">Home</a></li>
-                    <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">Products</a></li>
+                    <li class="li header-main__menu__li__mobile"><a href="index.html" class="a header-main__menu__a__mobile">Home</a></li>
+                    <li class="li header-main__menu__li__mobile"><a href="products_page.html" class="a header-main__menu__a__mobile">Products</a></li>
                     <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">About</a></li>
                     <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">Pages</a></li>
                     <li class="li header-main__menu__li__mobile"><a href="#" class="a header-main__menu__a__mobile">Blog</a></li>
@@ -132,12 +132,23 @@
         <!--Products-->
         <div class="products-main">
             <div class="products-main__wrapper">
-                <!--Products, New arrivals-->
-                <div class="products-main__wrapper__arrivals">
-                    <h3 class="h3 products-main__wrapper__arrivals__text">New arrivals on FooseShoes</h3>
-                    <button class="button products-main__wrapper__arrivals__button">Show All</button>
+                <!--Products, all products-->
+                <div class="products-main__wrapper__all-products">
+                    <div class="products-main__wrapper__all-products__links">
+                        <h3 class="h3 products-main__wrapper__all-products__title">All Products</h3>
+                        <a href="index.html" class="a products-main__wrapper__all-products__a">Home</a>
+                        <a href="products_page.html" class="a products-main__wrapper__all-products__a">All Products</a>
+                    </div>
+                    <div class="products-main__wrapper__all-products__buttons">
+                        <p class="p products-main__wrapper__all-products__buttons__title">View as</p>
+                        <button class="button products-main__wrapper__all-products__buttons__blocks" id="blocks_grid"></button>
+                        <button class="button products-main__wrapper__all-products__buttons__column" id="column_grid"></button>
+                        <button class="button products-main__wrapper__all-products__buttons__sort">Sort alphabetically</button>
+                    </div>
                 </div>
-                <div class="products-main__wrapper__arrivals-shoes">
+                <!--Products block-->
+                <div class="products-main__wrapper__all-shoes" id="products_grid">
+                    <!--Products, New arrivals-->
                     <div class="products-main__wrapper__arrivals-shoes__box">
                         <img src="images/shoes_first.jpg" alt="shoes_first" class="img products-main__wrapper__arrivals-shoes__image" width="300" height="270">
                         <h3 class="h3 products-main__wrapper__arrivals-shoes__price">$145,99</h3>
@@ -149,6 +160,7 @@
                             <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__cart"></a>
                         </div>
                     </div>
+
                     <div class="products-main__wrapper__arrivals-shoes__box">
                         <img src="images/shoes_second.jpg" alt="shoes_second" class="img products-main__wrapper__arrivals-shoes__image" width="300" height="270">
                         <h3 class="h3 products-main__wrapper__arrivals-shoes__price">$145,99</h3>
@@ -161,6 +173,7 @@
                             <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__cart"></a>
                         </div>
                     </div>
+
                     <div class="products-main__wrapper__arrivals-shoes__box">
                         <img src="images/shoes_third.jpg" alt="shoes_third" class="img products-main__wrapper__arrivals-shoes__image" width="300" height="270">
                         <h3 class="h3 products-main__wrapper__arrivals-shoes__price">$145,99</h3>
@@ -172,13 +185,7 @@
                             <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__cart"></a>
                         </div>
                     </div>
-                </div>
-                <!--Products, Best sellers-->
-                <div class="products-main__wrapper__best-sellers">
-                    <h3 class="h3 products-main__wrapper__best-sellers__text">Best sellers of the month</h3>
-                    <button class="button products-main__wrapper__best-sellers__button">Show All</button>
-                </div>
-                <div class="products-main__wrapper__best-sellers-shoes">
+                    <!--Products, Best sellers-->
                     <div class="products-main__wrapper__best-sellers-shoes__box">
                         <img src="images/shoes_fourth.jpg" alt="shoes_fourth" class="img products-main__wrapper__best-sellers-shoes__image" width="300" height="270">
                         <h3 class="h3 products-main__wrapper__best-sellers-shoes__price">$145,99</h3>
@@ -190,6 +197,7 @@
                             <a href="#" class="a products-main__wrapper__best-sellers-shoes__toolBar__cart"></a>
                         </div>
                     </div>
+
                     <div class="products-main__wrapper__best-sellers-shoes__box">
                         <img src="images/shoes_fifth.jpg" alt="shoes_fifth" class="img products-main__wrapper__best-sellers-shoes__image" width="300" height="270">
                         <h3 class="h3 products-main__wrapper__best-sellers-shoes__price">$145,99</h3>
@@ -201,6 +209,7 @@
                             <a href="#" class="a products-main__wrapper__best-sellers-shoes__toolBar__cart"></a>
                         </div>
                     </div>
+
                     <div class="products-main__wrapper__best-sellers-shoes__box">
                         <img src="images/shoes_sixth.jpg" alt="shoes_sixth" class="img products-main__wrapper__best-sellers-shoes__image" width="300" height="270">
                         <h3 class="h3 products-main__wrapper__best-sellers-shoes__price">$145,99</h3>
@@ -213,6 +222,44 @@
                             <a href="#" class="a products-main__wrapper__best-sellers-shoes__toolBar__cart"></a>
                         </div>
                     </div>
+                    <!--Products, New arrivals-->
+                    <div class="products-main__wrapper__arrivals-shoes__box">
+                        <img src="images/shoes_first.jpg" alt="shoes_first" class="img products-main__wrapper__arrivals-shoes__image" width="300" height="270">
+                        <h3 class="h3 products-main__wrapper__arrivals-shoes__price">$145,99</h3>
+                        <h3 class="h3 products-main__wrapper__arrivals-shoes__text">Even&Odd</h3>
+                        <div class="products-main__wrapper__arrivals-shoes__toolBar">
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__eye"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__star"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__share"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__cart"></a>
+                        </div>
+                    </div>
+
+                    <div class="products-main__wrapper__arrivals-shoes__box">
+                        <img src="images/shoes_second.jpg" alt="shoes_second" class="img products-main__wrapper__arrivals-shoes__image" width="300" height="270">
+                        <h3 class="h3 products-main__wrapper__arrivals-shoes__price">$145,99</h3>
+                        <h3 class="h3 products-main__wrapper__arrivals-shoes__text">Even&Odd</h3>
+                        <h3 class="h3 products-main__wrapper__arrivals-shoes__sale">On sale!</h3>
+                        <div class="products-main__wrapper__arrivals-shoes__toolBar">
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__eye"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__star"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__share"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__cart"></a>
+                        </div>
+                    </div>
+
+                    <div class="products-main__wrapper__arrivals-shoes__box">
+                        <img src="images/shoes_third.jpg" alt="shoes_third" class="img products-main__wrapper__arrivals-shoes__image" width="300" height="270">
+                        <h3 class="h3 products-main__wrapper__arrivals-shoes__price">$145,99</h3>
+                        <h3 class="h3 products-main__wrapper__arrivals-shoes__text__tablet">Buffalo Decolleté</h3>
+                        <div class="products-main__wrapper__arrivals-shoes__toolBar">
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__eye"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__star"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__share"></a>
+                            <a href="#" class="a products-main__wrapper__arrivals-shoes__toolBar__cart"></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <!--News-->
@@ -434,6 +481,8 @@
     <script src="scripts/email.js"></script>
     <!--Shop filter-->
     <script src="scripts/shop_filter.js"></script>
+    <!--Products grid-->
+    <script src="scripts/products_grid.js"></script>
 
 </body>
 </html>
