@@ -1559,7 +1559,10 @@ $second-grey-color: #2e2e2e;
     display: none;
   }
   .footer-main__wrapper__flickr {
-    margin-bottom: 15px;
+    display: none;
+  }
+  .footer-main__wrapper__twitter {
+    display: block;
   }
 }
 

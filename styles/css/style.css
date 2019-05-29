@@ -1703,7 +1703,9 @@
   .footer-main__wrapper__text {
     display: none; }
   .footer-main__wrapper__flickr {
-    margin-bottom: 15px; } }
+    display: none; }
+  .footer-main__wrapper__twitter {
+    display: block; } }
 
 /*Social network*/
 .footer-main__social {
